@@ -4,9 +4,9 @@ import './Received.scss'
 
 const Received = () => {
   return (
-    <div className="Received">
+    <section className="Received">
       <h1>Received</h1>
-    </div>
+    </section>
   )
 }
 

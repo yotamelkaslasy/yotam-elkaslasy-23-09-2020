@@ -5,8 +5,8 @@ import './Sidebar.scss'
 
 const Sidebar = () => {
   return (
-    <div className="Sidebar">
-      <div>
+    <aside className="Sidebar">
+      <nav>
         <ul>
           <li>
             <NavLink to="/" activeClassName="active">
@@ -24,8 +24,8 @@ const Sidebar = () => {
             </NavLink>
           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </aside>
   )
 }
 

@@ -4,9 +4,9 @@ import './List.scss'
 
 const List = () => {
   return (
-    <div className="List">
+    <section className="List">
       <h1>List</h1>
-    </div>
+    </section>
   )
 }
 
