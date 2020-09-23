@@ -14,13 +14,13 @@ const Sidebar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/bought-items" activeClassName="active">
-              Bought Items
+            <NavLink to="/list" activeClassName="active">
+              List
             </NavLink>
           </li>
           <li>
-            <NavLink to="/received-list" activeClassName="active">
-              Received List
+            <NavLink to="/received" activeClassName="active">
+              Received
             </NavLink>
           </li>
         </ul>

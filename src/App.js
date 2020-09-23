@@ -2,10 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Home from './pages/Home'
-import BoughtItems from './pages/BoughtItems/BoughtItems'
-import ReceivedList from './pages/ReceivedList/ReceivedList'
+import List from './pages/List'
+import Received from './pages/Received'
 
-import Sidebar from './components/Sidebar/Sidebar'
+import Sidebar from './components/Sidebar'
 
 import './App.scss'
 
@@ -18,11 +18,11 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route exact path="/bought-items">
-            <BoughtItems />
+          <Route exact path="/list">
+            <List />
           </Route>
-          <Route exact path="/Received-list">
-            <ReceivedList />
+          <Route exact path="/received">
+            <Received />
           </Route>
         </Switch>
       </Router>
