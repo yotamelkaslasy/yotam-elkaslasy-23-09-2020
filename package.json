@@ -2,7 +2,7 @@
   "name": "herolo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "htthttps://yotamelkaslasy.github.io/yotam-elkaslasy-23-09-2020",
+  "homepage": "https://yotamelkaslasy.github.io/yotam-elkaslasy-23-09-2020",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
