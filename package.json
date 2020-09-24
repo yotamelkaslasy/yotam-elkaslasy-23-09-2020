@@ -1,8 +1,8 @@
 {
-  "name": "herolo",
-  "version": "0.1.0",
-  "private": true,
   "homepage": "https://yotamelkaslasy.github.io/yotam-elkaslasy-23-09-2020",
+  "name": "herolo",
+  "version": "0.1.1",
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -17,7 +17,7 @@
     "uuid": "^8.3.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
+    "predeploy": "rm -rf build && yarn build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
