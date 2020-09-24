@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/yotam-elkaslasy-23-09-2020/static/css/main.b82fba0d.chunk.css",
-    "main.js": "/yotam-elkaslasy-23-09-2020/static/js/main.668fa428.chunk.js",
-    "main.js.map": "/yotam-elkaslasy-23-09-2020/static/js/main.668fa428.chunk.js.map",
+    "main.css": "/yotam-elkaslasy-23-09-2020/static/css/main.a56a9216.chunk.css",
+    "main.js": "/yotam-elkaslasy-23-09-2020/static/js/main.1eab1341.chunk.js",
+    "main.js.map": "/yotam-elkaslasy-23-09-2020/static/js/main.1eab1341.chunk.js.map",
     "runtime-main.js": "/yotam-elkaslasy-23-09-2020/static/js/runtime-main.4ebb8a1a.js",
     "runtime-main.js.map": "/yotam-elkaslasy-23-09-2020/static/js/runtime-main.4ebb8a1a.js.map",
     "static/css/2.8ff17cee.chunk.css": "/yotam-elkaslasy-23-09-2020/static/css/2.8ff17cee.chunk.css",
-    "static/js/2.7a6220d9.chunk.js": "/yotam-elkaslasy-23-09-2020/static/js/2.7a6220d9.chunk.js",
-    "static/js/2.7a6220d9.chunk.js.map": "/yotam-elkaslasy-23-09-2020/static/js/2.7a6220d9.chunk.js.map",
+    "static/js/2.f48380d1.chunk.js": "/yotam-elkaslasy-23-09-2020/static/js/2.f48380d1.chunk.js",
+    "static/js/2.f48380d1.chunk.js.map": "/yotam-elkaslasy-23-09-2020/static/js/2.f48380d1.chunk.js.map",
     "index.html": "/yotam-elkaslasy-23-09-2020/index.html",
-    "precache-manifest.247fb1597c135b9af6696f26563d0030.js": "/yotam-elkaslasy-23-09-2020/precache-manifest.247fb1597c135b9af6696f26563d0030.js",
+    "precache-manifest.2866354ac15b38fadeb4215d0cd5aae9.js": "/yotam-elkaslasy-23-09-2020/precache-manifest.2866354ac15b38fadeb4215d0cd5aae9.js",
     "service-worker.js": "/yotam-elkaslasy-23-09-2020/service-worker.js",
     "static/css/2.8ff17cee.chunk.css.map": "/yotam-elkaslasy-23-09-2020/static/css/2.8ff17cee.chunk.css.map",
-    "static/css/main.b82fba0d.chunk.css.map": "/yotam-elkaslasy-23-09-2020/static/css/main.b82fba0d.chunk.css.map",
-    "static/js/2.7a6220d9.chunk.js.LICENSE.txt": "/yotam-elkaslasy-23-09-2020/static/js/2.7a6220d9.chunk.js.LICENSE.txt"
+    "static/css/main.a56a9216.chunk.css.map": "/yotam-elkaslasy-23-09-2020/static/css/main.a56a9216.chunk.css.map",
+    "static/js/2.f48380d1.chunk.js.LICENSE.txt": "/yotam-elkaslasy-23-09-2020/static/js/2.f48380d1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4ebb8a1a.js",
     "static/css/2.8ff17cee.chunk.css",
-    "static/js/2.7a6220d9.chunk.js",
-    "static/css/main.b82fba0d.chunk.css",
-    "static/js/main.668fa428.chunk.js"
+    "static/js/2.f48380d1.chunk.js",
+    "static/css/main.a56a9216.chunk.css",
+    "static/js/main.1eab1341.chunk.js"
   ]
 }
