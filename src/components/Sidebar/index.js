@@ -9,11 +9,6 @@ const Sidebar = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/" activeClassName="active">
-              Home
-            </NavLink>
-          </li>
-          <li>
             <NavLink to="/list" activeClassName="active">
               List
             </NavLink>

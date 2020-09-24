@@ -1,9 +1,13 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from 'react-router-dom'
 
 import { StoreProvider } from './context/StoreContext'
 
-import Home from './pages/Home'
 import List from './pages/List'
 import Received from './pages/Received'
 
@@ -14,13 +18,13 @@ import './App.scss'
 function App() {
   return (
     <StoreProvider>
-      <Router>
+      <Router basename="/yotam-elkaslasy-23-09-2020">
         <Sidebar />
 
         <main className="App">
           <Switch>
             <Route exact path="/">
-              <Home />
+              <Redirect to="/list" />
             </Route>
             <Route exact path="/list">
               <List />
