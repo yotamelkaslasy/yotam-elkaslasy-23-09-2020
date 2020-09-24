@@ -1,0 +1,109 @@
+.AddItemModal-Backdrop {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.25);
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+.AddItemModal {
+  width: 400px;
+  height: 500px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 12px -1px rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+  position: fixed;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+
+  &__Title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 0.5em;
+  }
+
+  &__Description {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__FormWrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__FormItem {
+      width: 350px;
+      margin-bottom: 1em;
+
+      &-label {
+        margin-right: 1em;
+        margin-bottom: 0.5em;
+        display: block;
+        color: #404040;
+      }
+      &-input {
+        overflow: visible;
+        width: 100%;
+        height: 30px;
+        padding: 0;
+        margin: 0;
+        border: none;
+        border-bottom: 1px solid;
+        padding-left: 1em;
+        color: #404040;
+      }
+      &-select {
+        width: 100%;
+        height: 30px;
+        margin: 0;
+        border: none;
+        border-bottom: 1px solid;
+        padding-left: 1em;
+        color: #404040;
+      }
+    }
+  }
+
+  &__ActionsWrap {
+    display: flex;
+    justify-content: flex-end;
+
+    &__SaveButton {
+      margin-right: 0.5em;
+    }
+  }
+}
+
+.AddItemModalButton {
+  position: absolute;
+  bottom: 0;
+
+  width: 250px;
+  height: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media only screen and (min-width: 768px) {
+  .AddItemModal {
+    width: 55vw;
+    height: 500px;
+  }
+
+  .AddItemModalButton {
+    width: 165px;
+    height: 35px;
+  }
+}
