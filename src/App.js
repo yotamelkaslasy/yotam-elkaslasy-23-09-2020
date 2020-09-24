@@ -19,24 +19,26 @@ function App() {
   return (
     <StoreProvider>
       <Router basename="/yotam-elkaslasy-23-09-2020">
-        <Sidebar />
+        <div className="App">
+          <Sidebar />
 
-        <main className="App">
-          <Switch>
-            <Route exact path="/">
-              <Redirect to="/list" />
-            </Route>
-            <Route exact path="/list">
-              <List />
-            </Route>
-            <Route exact path="/received">
-              <Received />
-            </Route>
-            <Route path="*">
-              <Redirect to="/list" />
-            </Route>
-          </Switch>
-        </main>
+          <main className="Wrapper">
+            <Switch>
+              <Route exact path="/">
+                <Redirect to="/list" />
+              </Route>
+              <Route exact path="/list">
+                <List />
+              </Route>
+              <Route exact path="/received">
+                <Received />
+              </Route>
+              <Route path="*">
+                <Redirect to="/list" />
+              </Route>
+            </Switch>
+          </main>
+        </div>
       </Router>
     </StoreProvider>
   )

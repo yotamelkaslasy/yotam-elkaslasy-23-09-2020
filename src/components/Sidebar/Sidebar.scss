@@ -1,3 +1,22 @@
 .Sidebar {
+  position: relative;
   display: block;
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.25);
+  padding: 15px 10px;
+
+  nav ul {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .Sidebar {
+    display: block;
+    width: 250px;
+    background: white;
+    box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.25);
+    padding: 50px 15px;
+  }
 }

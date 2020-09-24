@@ -1,7 +1,30 @@
 .App {
-  display: block;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: #ececec;
+
+  .Wrapper {
+    display: flex;
+    flex: 1;
+    padding: 10px 15px;
+    flex-direction: column;
+  }
 
   &-link {
     color: #61dafb;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .App {
+    width: 100%;
+    flex-direction: row;
+
+    .Wrapper {
+      display: block;
+      flex: 1;
+      padding: 50px 15px;
+    }
   }
 }
