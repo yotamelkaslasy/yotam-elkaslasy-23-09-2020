@@ -32,6 +32,9 @@ function App() {
             <Route exact path="/received">
               <Received />
             </Route>
+            <Route path="*">
+              <Redirect to="/list" />
+            </Route>
           </Switch>
         </main>
       </Router>
