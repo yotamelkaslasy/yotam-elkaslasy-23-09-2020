@@ -1,21 +1,25 @@
 # yotam-elkaslasy-23-09-2020
 Herolo - Shopping Tracking List
 
+Built with create react app, mobx, mobx-react-lite.
+Responsive breakpoint of 768px to support mobile.
+Link to published app: [gh-pages](https://yotamelkaslasy.github.io/yotam-elkaslasy-23-09-2020/list)
+
 ## List, Empty:
-![GitHub Logo](/screenshots/list-empty-items.jpg)
+![List, Empty](/screenshots/list-empty-items.jpg)
 
 ## List, Modal:
-![GitHub Logo](/screenshots/list-add-item-modal.jpg)
+![List, Modal](/screenshots/list-add-item-modal.jpg)
 
 ## List, Populated:
-![GitHub Logo](/screenshots/list-populated-items.jpg)
+![List, Populated](/screenshots/list-populated-items.jpg)
 
 ## List, Store:
-![GitHub Logo](/screenshots/list-store-items.jpg)
+![List, Store](/screenshots/list-store-items.jpg)
 
 ## Received, Populated:
-![GitHub Logo](/screenshots/received-populated-items.jpg)
+![Received, Populated](/screenshots/received-populated-items.jpg)
 
 ## Error overlay:
-![GitHub Logo](/screenshots/fetch-currency-error-overlay.jpg)
+![Error overlay](/screenshots/fetch-currency-error-overlay.jpg)
 
