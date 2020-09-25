@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/yotam-elkaslasy-23-09-2020/precache-manifest.95c01183039c2ecc2a137d9f83d76abb.js"
+  "/yotam-elkaslasy-23-09-2020/precache-manifest.c4b649abf62341c60c513d65c32d31c4.js"
 );
 
 self.addEventListener('message', (event) => {
