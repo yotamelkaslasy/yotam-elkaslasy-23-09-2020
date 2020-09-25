@@ -1,0 +1,15 @@
+.FetchCurrencyError {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  background: #fb5f5f;
+  color: #fff;
+  font-size: 24px;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
