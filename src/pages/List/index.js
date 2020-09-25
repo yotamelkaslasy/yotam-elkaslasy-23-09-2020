@@ -4,8 +4,10 @@ import { useLocation } from 'react-router-dom'
 import * as dateUtils from 'date-fns'
 
 import { STORES } from '../../constants'
-import { useStore } from '../../hooks'
+import { useStore, useInterval } from '../../hooks'
 import Button from '../../components/Button'
+import LoadingSpinner from '../../components/LoadingSpinner'
+import FetchCurrencyError from '../../components/FetchCurrencyError'
 import { AddItemModalButton, AddItemModal } from '../../components/AddItemModal'
 
 import './List.scss'
@@ -27,15 +29,27 @@ const List = observer(() => {
     },
   }))
 
+  useInterval(
+    () => {
+      rootStore.fetchCurrency()
+    },
+    rootStore.currencyInterval || rootStore.defaultCurrencyInterval,
+    true,
+    [rootStore.currencyInterval]
+  )
+
   useEffect(() => {
-    rootStore.calcAggregatedSum('amazon')
-    rootStore.calcAggregatedSum('ebay')
+    rootStore.calcAggregatedListSum('amazon')
+    rootStore.calcAggregatedListSum('ebay')
   })
 
   const isListRoute = useLocation().pathname === '/list'
   const isItemsList = store.selectedTab === 'items'
   const isStoresList = store.selectedTab === 'stores'
 
+  const onIntervalChange = event => {
+    rootStore.onIntervalChange(parseInt(event.target.value))
+  }
   return (
     <section className="List">
       <header className="List__Header">
@@ -60,8 +74,33 @@ const List = observer(() => {
             <div className="Col">Item Name</div>
             <div className="Col">Online Store</div>
             <div className="Col">Price (USD)</div>
-            <div className="Col">Est. Delivery Date</div>
+            <div className="Col" style={{ position: 'relative' }}>
+              Price (ILS){' '}
+              <LoadingSpinner isLoading={rootStore.data.fetchCurrencyLoading} />
+            </div>
+            <div className="Col text-bold">Est. Delivery Date</div>
             <div className="Col">Action</div>
+          </div>
+
+          <div className="List__Interval">
+            <label htmlFor="intervalInput" className="List__Interval-label">
+              Interval in Milliseconds
+            </label>
+            <input
+              id="intervalInput"
+              className="List__Interval-input"
+              type="number"
+              name="currencyInterval"
+              min="100"
+              defaultValue={rootStore.defaultCurrencyInterval}
+              onChange={onIntervalChange}
+              placeholder="Number of milliseconds"
+            />
+            Interval Selected:{' '}
+            {rootStore.currencyInterval
+              ? rootStore.currencyInterval
+              : rootStore.defaultCurrencyInterval}
+            ms
           </div>
 
           {rootStore.data.list.size === 0 && (
@@ -95,6 +134,12 @@ const List = observer(() => {
                   <div className="Col">{value.name}</div>
                   <div className="Col">{value.onlineStore}</div>
                   <div className="Col">${value.price}</div>
+                  <div className="Col">
+                    ₪
+                    {(value.price * rootStore.data.currency.rates.ILS).toFixed(
+                      2
+                    )}
+                  </div>
                   <div className="Col">{value.deliveryDate}</div>
                   <div className="Col">
                     <Button
@@ -123,7 +168,7 @@ const List = observer(() => {
               <div key={key} className="Row">
                 <div className="Col">{index}</div>
                 <div className="Col">{key}</div>
-                <div className="Col">${rootStore.data.sum[key]}</div>
+                <div className="Col">${rootStore.data.listSum[key]}</div>
               </div>
             )
           })}
@@ -138,6 +183,8 @@ const List = observer(() => {
         visible={store.isModalVisible}
         closeModalHandler={store.closeModal}
       />
+
+      <FetchCurrencyError />
     </section>
   )
 })

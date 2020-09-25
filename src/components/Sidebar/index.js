@@ -9,12 +9,15 @@ const Sidebar = () => {
       <nav>
         <ul>
           <li>
-            <NavLink to="/list" activeClassName="active">
+            <NavLink to="/list" className="App-link" activeClassName="active">
               List
             </NavLink>
           </li>
           <li>
-            <NavLink to="/received" activeClassName="active">
+            <NavLink
+              to="/received"
+              className="App-link"
+              activeClassName="active">
               Received
             </NavLink>
           </li>
